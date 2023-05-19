@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+
+        <title>Contact-Naisarg Patel</title>
+        
+    </head>
+    <body>
+
+        
+
+
+        <nav class="navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><u>Naisarg Patel</u></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="education.html">Education</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="extracurricular.html">Extracurricular</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+
+          <div class="container">
+            <div class="row align-items-start">
+              <div class="col">
+                <br>
+                <p class="name">Naisarg Patel</p>
+                <p>Email: <a class="my_link" id="link1" href="mailto:naisarg.patel14@hotmail.com">naisarg.patel14@hotmail.com</a></p>
+                <script>
+                  document.getElementById("link1").addEventListener("mouseover", mouseOver);
+                  document.getElementById("link1").addEventListener("mouseout", mouseOut);
+
+                  function mouseOver() {
+                    document.getElementById("link1").style.color = "red";
+                  }
+
+                  function mouseOut() {
+                    document.getElementById("link1").style.color = "blue";
+                  }
+                </script>
+                <address>
+                  <ul class="list-unstyled">
+                    <li class="name">Address:</li>
+                    <li>Chala, Vapi</li>
+                    <li>Valsad, 396191</li>
+                  </ul>
+                </address>
+              </div>
+              <div class="col">
+                <br>
+                <strong>Fill this from and we will get in touch with you:</strong>
+                <br>
+                <br>
+                <form>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <label for="floatingInput">Email address</label>
+                    <div class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="form-floating">
+                    <input type="number" class="form-control" id="floatingNumber" placeholder="Contact Number" required min="0">
+                    <label for="floatingNumber">Contact Number</label>
+                    <div class="form-text">We'll never share your contact number with anyone else.</div>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Describe your query in brief</label>
+                  </div>
+            
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" required>
+                    <label class="form-check-label">I allow Naisarg Patel or his associates to contact me.</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+        <div class="container">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="education.html" class="nav-link px-2 text-muted">Education</a>
+              </li>
+              <li class="nav-item">
+                <a href="extracurricular.html" class="nav-link px-2 text-muted">Extracurricular</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link px-2 text-muted">Contact Us</a>
+              </li>
+            </ul>
+            <p class="text-center text-muted">&#169;Naisarg Patel</p>
+          </footer>
+          </div>
+
+    </body>
+</html>

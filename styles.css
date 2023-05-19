@@ -1,0 +1,16 @@
+.name
+{
+    font-size: large;
+    text-decoration: underline;
+    text-shadow: 1px 1px #808080;
+}
+
+.centered
+{
+    text-align: center;
+}
+
+.my_link
+{
+    text-decoration: none;
+}
