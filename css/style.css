@@ -1,0 +1,201 @@
+:root {
+    --primary-color: #003366;
+    /* Academic Blue */
+    --secondary-color: #1a5c96;
+    --accent-color: #f8f9fa;
+    --text-color: #2c3e50;
+    --heading-font: 'Merriweather', serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: #fdfdfd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* Navbar overrides */
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin-left: 10px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link.active {
+    color: #fff;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+/* Join Button special style in Navbar */
+.nav-link.join-btn.active::after {
+    display: none;
+    /* No underline for button */
+}
+
+/* CHANGE: Fix for active join button visibility (White Text on White BG collision) */
+.navbar .nav-link.btn.active {
+    color: var(--primary-color) !important;
+    /* Force text to be blue */
+    background-color: white !important;
+    /* White background */
+    border-color: white !important;
+    opacity: 1 !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1a5c96 100%);
+    color: white;
+    padding: 4rem 0;
+    margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+    color: white;
+    font-weight: 700;
+}
+
+.hero-section .lead {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Cards */
+.card {
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 2px solid #f0f0f0;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Timeline specific styles (for CV) */
+.timeline-item {
+    border-left: 2px solid var(--secondary-color);
+    padding-left: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.timeline-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.timeline-subtitle {
+    font-style: italic;
+    color: #495057;
+}
+
+/* Publication List */
+.pub-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.pub-item:last-child {
+    border-bottom: none;
+}
+
+.pub-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.pub-authors {
+    color: #444;
+}
+
+.pub-meta {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
